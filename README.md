@@ -78,12 +78,8 @@ The dataset contains 14 medical attributes commonly used in heart disease predic
 
 ---
 
-## 📁 Project Structure
-
-
-
 ## 📁 Project Structure  
-
+```
 heart_disease_analysis/
 │
 ├── data/
@@ -97,7 +93,7 @@ heart_disease_analysis/
 │   └── 
 │
 └── README.md
-
+```
 
 ---
 
