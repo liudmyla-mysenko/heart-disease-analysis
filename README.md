@@ -1,24 +1,30 @@
-# ❤️ Heart Disease Dataset – Exploratory Data Analysis & Preprocessing
+# ❤️ Heart Disease Dataset – Exploratory Data Analysis, SQL & Preprocessing
 
-This project performs a complete exploratory data analysis (EDA) and preprocessing workflow on the Heart Disease dataset from Kaggle.  
-It demonstrates essential data analytics skills including data cleaning, encoding, filtering, descriptive statistics, and preparing the dataset for machine learning.
+This project performs a complete exploratory data analysis (EDA), SQL database setup, and preprocessing workflow on the Heart Disease dataset from Kaggle.
+It demonstrates essential data analytics skills including SQL querying, data cleaning, encoding, filtering, descriptive statistics, and preparing the dataset for machine learning and visualization.
 
 ---
 
 ## 📘 Project Summary
 
-Heart disease remains one of the leading causes of mortality worldwide, making accurate data analysis essential for understanding risk factors.  
+Heart disease remains one of the leading causes of mortality worldwide, making accurate data analysis essential for understanding risk factors.
 This project explores a structured medical dataset containing patient attributes such as age, sex, chest pain type, cholesterol levels, blood pressure, and more.
 
-The goal of this analysis is to:
+The goals of this analysis are to:
 
-- Understand the dataset structure  
-- Identify categorical and numerical features  
-- Apply appropriate encoding techniques  
-- Perform filtering and statistical exploration  
-- Clean and prepare the dataset for future modeling  
+Understand the dataset structure
 
-The final output is a fully cleaned dataset (`heart_cleaned.csv`) ready for machine learning tasks such as classification or risk prediction.
+Build a SQL database for storage and querying
+
+Identify categorical and numerical features
+
+Apply appropriate encoding techniques
+
+Perform filtering and statistical exploration
+
+Clean and prepare the dataset for future modeling
+
+The final output is a fully cleaned dataset (heart_cleaned.csv) ready for machine learning tasks such as classification or risk prediction.
 
 ---
 
@@ -37,7 +43,53 @@ The dataset contains 14 medical attributes commonly used in heart disease predic
 
 ---
 
-## 🧪 Project Steps
+## 🗄 SQL Database & Analysis
+To support structured analysis and future dashboard development, the dataset was imported into Microsoft SQL Server.
+
+Database: HeartDiseaseDB
+Main Table: dbo.heart
+
+### 01_create_table.sql
+
+Defines the schema for the dbo.heart table:
+
+Drops existing table
+
+Creates a clean table with correct data types
+
+Ensures reproducibility for anyone cloning the project
+
+### 02_import_data.sql
+
+Documents the import process:
+
+Data imported using SSMS → Tasks → Import Flat File
+
+Source: heart.csv
+
+Destination: dbo.heart
+
+Instructions included for re-importing
+
+### 03_analysis_queries.sql
+
+Contains SQL queries for:
+
+Previewing data
+
+Counting rows
+
+Basic statistics
+
+Heart disease distribution
+
+Grouped insights (cholesterol by sex, heart rate by chest pain type)
+
+These queries form the foundation for deeper analysis and Power BI dashboards.
+
+---
+
+## 🧪 Python EDA & Preprocessing
 
 ### **1. Load and inspect the dataset**
 - View first rows  
@@ -78,7 +130,8 @@ The dataset contains 14 medical attributes commonly used in heart disease predic
 
 ---
 
-## 📁 Project Structure  
+## 📁 Project Structure 
+ 
 ```
 heart_disease_analysis/
 │
@@ -86,11 +139,15 @@ heart_disease_analysis/
 │   ├── heart.csv
 │   └── heart_cleaned.csv
 │
+├── sql/
+│   ├── 01_create_table.sql
+│   ├── 02_import_data.sql
+│   └── 03_analysis_queries.sql
+│
 ├── notebooks/
 │   └── heart_disease_eda.ipynb
 │
 ├── images/
-│   └── 
 │
 └── README.md
 ```
@@ -99,12 +156,17 @@ heart_disease_analysis/
 
 ## 🎯 Final Output
 
-A fully cleaned dataset (`heart_cleaned.csv`) ready for:
+A fully cleaned dataset (heart_cleaned.csv) ready for:
 
-- Machine learning  
-- Statistical modeling  
-- Visualization  
-- Further medical analysis  
+- Machine learning
+
+- Statistical modeling
+
+- SQL analysis
+
+- Power BI dashboards
+
+- Further medical research
 
 ---
 
@@ -113,6 +175,7 @@ A fully cleaned dataset (`heart_cleaned.csv`) ready for:
 - Build a classification model (Logistic Regression, Random Forest, XGBoost)  
 - Create visualizations (heatmaps, histograms, boxplots)  
 - Add a dashboard Power BI
+- Add stored procedures or SQL views for reporting
 
 ---
 
