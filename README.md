@@ -185,10 +185,9 @@ A fully cleaned dataset (heart_cleaned.csv) ready for:
 
 ---
 
-## 🚀 Next Steps (Optional Enhancements)
+## 🚀 Next Steps
 
-- Build a classification model (Logistic Regression, Random Forest, XGBoost)  
-- Create visualizations (heatmaps, histograms, boxplots)  
+- Build a classification model (Logistic Regression, Random Forest, XGBoost)    
 - Add a dashboard Power BI
 - Add stored procedures or SQL views for reporting
 
