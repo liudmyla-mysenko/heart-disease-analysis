@@ -131,14 +131,12 @@ These queries form the foundation for deeper analysis and Power BI dashboards.
 ---
 
 
-### Distribution of Max Heart Rate by Heart Disease Target
-
+### Max Heart Rate Distribution by Heart Disease Target
 ![Thalach Distribution](images/thalach_distribution_by_target.png)
 
+
 ### Correlation Heatmap of Medical Features
-
 ![Correlation Heatmap](images/heart_disease_correlation_heatmap.png)
-
 
 ---
 
